@@ -12,7 +12,7 @@
     <AssemblyName>TickTalker</AssemblyName>
     <TargetFrameworkVersion>v3.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <ApplicationIcon>clock.ico</ApplicationIcon>
+    <ApplicationIcon>ticktalker.ico</ApplicationIcon>
     <SccProjectName>SAK</SccProjectName>
     <SccLocalPath>SAK</SccLocalPath>
     <SccAuxPath>SAK</SccAuxPath>
@@ -108,7 +108,8 @@
     <Compile Include="Talker.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="clock.ico" />
+    <Content Include="Media\ticktalker.png" />
+    <Content Include="ticktalker.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

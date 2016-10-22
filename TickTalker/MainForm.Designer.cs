@@ -50,6 +50,7 @@
             // 
             // cmsMenu
             // 
+            this.cmsMenu.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.cmsMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.cmsSettings,
             this.toolStripMenuItem2,
@@ -57,36 +58,36 @@
             this.toolStripMenuItem1,
             this.cmsExit});
             this.cmsMenu.Name = "cmsMenu";
-            this.cmsMenu.Size = new System.Drawing.Size(174, 82);
+            this.cmsMenu.Size = new System.Drawing.Size(226, 106);
             // 
             // cmsSettings
             // 
             this.cmsSettings.Name = "cmsSettings";
-            this.cmsSettings.Size = new System.Drawing.Size(173, 22);
+            this.cmsSettings.Size = new System.Drawing.Size(225, 30);
             this.cmsSettings.Text = "Settings...";
             this.cmsSettings.Click += new System.EventHandler(this.cmsSettings_Click);
             // 
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(170, 6);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(222, 6);
             // 
             // cmsAbout
             // 
             this.cmsAbout.Name = "cmsAbout";
-            this.cmsAbout.Size = new System.Drawing.Size(173, 22);
+            this.cmsAbout.Size = new System.Drawing.Size(225, 30);
             this.cmsAbout.Text = "&About TickTalker...";
             this.cmsAbout.Click += new System.EventHandler(this.aboutTickTalkerToolStripMenuItem_Click);
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(170, 6);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(222, 6);
             // 
             // cmsExit
             // 
             this.cmsExit.Name = "cmsExit";
-            this.cmsExit.Size = new System.Drawing.Size(173, 22);
+            this.cmsExit.Size = new System.Drawing.Size(225, 30);
             this.cmsExit.Text = "E&xit";
             this.cmsExit.Click += new System.EventHandler(this.cmsExit_Click);
             // 
@@ -98,12 +99,14 @@
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(377, 333);
+            this.ClientSize = new System.Drawing.Size(566, 512);
             this.ControlBox = false;
             this.Enabled = false;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "MainForm";
