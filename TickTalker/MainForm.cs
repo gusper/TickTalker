@@ -16,13 +16,13 @@ namespace TickTalker
         public MainForm()
         {
             InitializeComponent();
-            this.WindowState = FormWindowState.Minimized;
-            this.BringToFront();
+            WindowState = FormWindowState.Minimized;
+            BringToFront();
         }
 
         private void showSettingsDialog()
         {
-            SettingsDialog sd = new SettingsDialog(_talker.SynthObj);
+            var sd = new SettingsDialog(_talker.SynthObj);
             sd.ShowDialog();
         }
 
