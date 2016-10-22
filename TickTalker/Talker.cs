@@ -13,7 +13,9 @@ namespace TickTalker
         {
             _ss.Rate = Settings.SpeakingRate;
             _ss.Volume = 100;
-            _ss.SpeakAsync(""); // Do this so Windows registers TickTalker in the volume mixer
+
+            // Do this so Windows registers TickTalker in the volume mixer
+            _ss.SpeakAsync(""); 
         }
 
         public SpeechSynthesizer SynthObj
@@ -29,17 +31,25 @@ namespace TickTalker
             if (Settings.AnnounceOnTheHour)
             {
                 if (DateTime.Now.Minute == 0)
+                {
                     _ss.SpeakAsync("It's " + DateTime.Now.ToShortTimeString());
+                }
                 else if (Settings.WarnInAdvance && DateTime.Now.Minute == (60 - Settings.MinutesInAdvance))
+                {
                     _ss.SpeakAsync("It's almost " + (DateTime.Now.AddMinutes(Settings.MinutesInAdvance).ToShortTimeString()));
+                }
             }
 
             if (Settings.AnnounceOnTheHalfHour)
             {
                 if (DateTime.Now.Minute == 30)
+                {
                     _ss.SpeakAsync("It's " + DateTime.Now.ToShortTimeString());
+                }
                 else if (Settings.WarnInAdvance && DateTime.Now.Minute == (30 - Settings.MinutesInAdvance))
+                {
                     _ss.SpeakAsync("It's almost " + (DateTime.Now.AddMinutes(Settings.MinutesInAdvance).ToShortTimeString()));
+                }
             }
         }
 
@@ -50,10 +60,16 @@ namespace TickTalker
 
             int currHour = DateTime.Now.Hour;
 
-            if (Settings.QuietStartHour > Settings.QuietEndHour)            // If quiet span crosses midnight
+            // If quiet span crosses midnight
+            if (Settings.QuietStartHour > Settings.QuietEndHour)
+            {
                 return ((currHour >= Settings.QuietStartHour) || (currHour < Settings.QuietEndHour));
-            else if (Settings.QuietStartHour < Settings.QuietEndHour)       // If quiet span does not cross midnight
+            }
+            // If quiet span does not cross midnight
+            else if (Settings.QuietStartHour < Settings.QuietEndHour)
+            {
                 return ((currHour >= Settings.QuietStartHour) && (currHour < Settings.QuietEndHour));
+            }
 
             return (currHour == Settings.QuietStartHour);
         }

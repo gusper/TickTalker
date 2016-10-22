@@ -41,98 +41,50 @@ namespace TickTalker
 
         public static bool AnnounceOnTheHour
         {
-            get
-            {
-                return _data.AnnounceOnTheHour;
-            }
-            set
-            {
-                _data.AnnounceOnTheHour = value;
-            }
+            get { return _data.AnnounceOnTheHour; }
+            set { _data.AnnounceOnTheHour = value; }
         }
 
         public static bool AnnounceOnTheHalfHour 
         {
-            get
-            {
-                return _data.AnnounceOnTheHalfHour;
-            }
-            set
-            {
-                _data.AnnounceOnTheHalfHour = value;
-            }
+            get { return _data.AnnounceOnTheHalfHour; }
+            set { _data.AnnounceOnTheHalfHour = value; }
         }
 
         public static bool WarnInAdvance 
         {
-            get
-            {
-                return _data.WarnInAdvance;
-            }
-            set
-            {
-                _data.WarnInAdvance = value;
-            }
+            get { return _data.WarnInAdvance; }
+            set { _data.WarnInAdvance = value; }
         }
 
         public static int MinutesInAdvance 
         {
-            get
-            {
-                return _data.MinutesInAdvance;
-            }
-            set
-            {
-                _data.MinutesInAdvance = value;
-            }
+            get { return _data.MinutesInAdvance; }
+            set { _data.MinutesInAdvance = value; }
         }
         
         public static int SpeakingRate
         {
-            get
-            {
-                return _data.SpeakingRate;
-            }
-            set
-            {
-                _data.SpeakingRate = value;
-            }
+            get { return _data.SpeakingRate; }
+            set { _data.SpeakingRate = value; }
         }
 
         public static bool QuietTimeEnabled
         {
-            get
-            {
-                return _data.QuietTimeEnabled;
-            }
-            set
-            {
-                _data.QuietTimeEnabled = value;
-            }
+            get { return _data.QuietTimeEnabled; }
+            set { _data.QuietTimeEnabled = value; }
         }
 
         public static int QuietStartHour
         {
-            get
-            {
-                return _data.QuietStartHour;
-            }
-            set
-            {
-                _data.QuietStartHour = value;
-            }
+            get { return _data.QuietStartHour; }
+            set { _data.QuietStartHour = value; }
         }
 
         public static int QuietEndHour
         {
-            get
-            {
-                return _data.QuietEndHour;
-            }
-            set
-            {
-                _data.QuietEndHour = value;
-            }
+            get { return _data.QuietEndHour; }
+            set { _data.QuietEndHour = value; }
         }
     }
 }
