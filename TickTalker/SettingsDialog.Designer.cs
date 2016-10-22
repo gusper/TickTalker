@@ -59,10 +59,11 @@
             // cbxOnTheHour
             // 
             this.cbxOnTheHour.AutoSize = true;
+            this.cbxOnTheHour.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxOnTheHour.Location = new System.Drawing.Point(9, 29);
             this.cbxOnTheHour.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cbxOnTheHour.Name = "cbxOnTheHour";
-            this.cbxOnTheHour.Size = new System.Drawing.Size(160, 32);
+            this.cbxOnTheHour.Size = new System.Drawing.Size(162, 35);
             this.cbxOnTheHour.TabIndex = 1;
             this.cbxOnTheHour.Text = "On the hour";
             this.cbxOnTheHour.UseVisualStyleBackColor = true;
@@ -70,10 +71,11 @@
             // cbxOnTheHalfHour
             // 
             this.cbxOnTheHalfHour.AutoSize = true;
+            this.cbxOnTheHalfHour.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxOnTheHalfHour.Location = new System.Drawing.Point(9, 72);
             this.cbxOnTheHalfHour.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cbxOnTheHalfHour.Name = "cbxOnTheHalfHour";
-            this.cbxOnTheHalfHour.Size = new System.Drawing.Size(204, 32);
+            this.cbxOnTheHalfHour.Size = new System.Drawing.Size(206, 35);
             this.cbxOnTheHalfHour.TabIndex = 2;
             this.cbxOnTheHalfHour.Text = "On the half hour";
             this.cbxOnTheHalfHour.UseVisualStyleBackColor = true;
@@ -85,7 +87,7 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.cbxOnTheHalfHour);
             this.groupBox1.Controls.Add(this.cbxWarnInAdvance);
-            this.groupBox1.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(20, 20);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.groupBox1.Name = "groupBox1";
@@ -97,6 +99,7 @@
             // 
             // nudMinsInAdvance
             // 
+            this.nudMinsInAdvance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nudMinsInAdvance.Location = new System.Drawing.Point(98, 109);
             this.nudMinsInAdvance.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.nudMinsInAdvance.Maximum = new decimal(new int[] {
@@ -110,7 +113,7 @@
             0,
             0});
             this.nudMinsInAdvance.Name = "nudMinsInAdvance";
-            this.nudMinsInAdvance.Size = new System.Drawing.Size(64, 35);
+            this.nudMinsInAdvance.Size = new System.Drawing.Size(64, 37);
             this.nudMinsInAdvance.TabIndex = 4;
             this.nudMinsInAdvance.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.nudMinsInAdvance.Value = new decimal(new int[] {
@@ -122,20 +125,22 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(171, 115);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(208, 28);
+            this.label1.Size = new System.Drawing.Size(212, 31);
             this.label1.TabIndex = 3;
             this.label1.Text = "minutes in advance";
             // 
             // cbxWarnInAdvance
             // 
             this.cbxWarnInAdvance.AutoSize = true;
+            this.cbxWarnInAdvance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxWarnInAdvance.Location = new System.Drawing.Point(9, 115);
             this.cbxWarnInAdvance.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cbxWarnInAdvance.Name = "cbxWarnInAdvance";
-            this.cbxWarnInAdvance.Size = new System.Drawing.Size(92, 32);
+            this.cbxWarnInAdvance.Size = new System.Drawing.Size(93, 35);
             this.cbxWarnInAdvance.TabIndex = 1;
             this.cbxWarnInAdvance.Text = "Warn";
             this.cbxWarnInAdvance.UseVisualStyleBackColor = true;
@@ -143,7 +148,7 @@
             // btnOK
             // 
             this.btnOK.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.btnOK.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOK.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnOK.Location = new System.Drawing.Point(423, 505);
             this.btnOK.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnOK.Name = "btnOK";
@@ -158,7 +163,7 @@
             this.groupBox3.Controls.Add(this.btnPlaySample);
             this.groupBox3.Controls.Add(this.label2);
             this.groupBox3.Controls.Add(this.trbSpeakingRate);
-            this.groupBox3.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox3.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox3.Location = new System.Drawing.Point(21, 208);
             this.groupBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.groupBox3.Name = "groupBox3";
@@ -170,6 +175,7 @@
             // 
             // btnPlaySample
             // 
+            this.btnPlaySample.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPlaySample.Location = new System.Drawing.Point(374, 28);
             this.btnPlaySample.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnPlaySample.Name = "btnPlaySample";
@@ -182,10 +188,11 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(9, 40);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(157, 28);
+            this.label2.Size = new System.Drawing.Size(160, 31);
             this.label2.TabIndex = 1;
             this.label2.Text = "Speaking Rate";
             // 
@@ -206,7 +213,7 @@
             this.groupBox2.Controls.Add(this.cbxQuietStartMeridiem);
             this.groupBox2.Controls.Add(this.nudQuietStart);
             this.groupBox2.Controls.Add(this.chkQuietTime);
-            this.groupBox2.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(20, 335);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.groupBox2.Name = "groupBox2";
@@ -219,29 +226,32 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(210, 89);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(50, 28);
+            this.label3.Size = new System.Drawing.Size(53, 31);
             this.label3.TabIndex = 5;
             this.label3.Text = "and";
             // 
             // cbxQuietEndMeridiem
             // 
             this.cbxQuietEndMeridiem.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbxQuietEndMeridiem.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxQuietEndMeridiem.FormattingEnabled = true;
             this.cbxQuietEndMeridiem.Items.AddRange(new object[] {
             "AM",
             "PM"});
-            this.cbxQuietEndMeridiem.Location = new System.Drawing.Point(334, 85);
+            this.cbxQuietEndMeridiem.Location = new System.Drawing.Point(345, 84);
             this.cbxQuietEndMeridiem.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cbxQuietEndMeridiem.Name = "cbxQuietEndMeridiem";
-            this.cbxQuietEndMeridiem.Size = new System.Drawing.Size(70, 36);
+            this.cbxQuietEndMeridiem.Size = new System.Drawing.Size(70, 39);
             this.cbxQuietEndMeridiem.TabIndex = 4;
             // 
             // nudQuietEnd
             // 
-            this.nudQuietEnd.Location = new System.Drawing.Point(262, 86);
+            this.nudQuietEnd.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nudQuietEnd.Location = new System.Drawing.Point(271, 86);
             this.nudQuietEnd.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.nudQuietEnd.Maximum = new decimal(new int[] {
             12,
@@ -254,7 +264,7 @@
             0,
             0});
             this.nudQuietEnd.Name = "nudQuietEnd";
-            this.nudQuietEnd.Size = new System.Drawing.Size(63, 35);
+            this.nudQuietEnd.Size = new System.Drawing.Size(63, 37);
             this.nudQuietEnd.TabIndex = 3;
             this.nudQuietEnd.Value = new decimal(new int[] {
             1,
@@ -265,6 +275,7 @@
             // cbxQuietStartMeridiem
             // 
             this.cbxQuietStartMeridiem.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbxQuietStartMeridiem.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxQuietStartMeridiem.FormattingEnabled = true;
             this.cbxQuietStartMeridiem.Items.AddRange(new object[] {
             "AM",
@@ -272,11 +283,12 @@
             this.cbxQuietStartMeridiem.Location = new System.Drawing.Point(129, 83);
             this.cbxQuietStartMeridiem.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cbxQuietStartMeridiem.Name = "cbxQuietStartMeridiem";
-            this.cbxQuietStartMeridiem.Size = new System.Drawing.Size(70, 36);
+            this.cbxQuietStartMeridiem.Size = new System.Drawing.Size(70, 39);
             this.cbxQuietStartMeridiem.TabIndex = 2;
             // 
             // nudQuietStart
             // 
+            this.nudQuietStart.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nudQuietStart.Location = new System.Drawing.Point(57, 85);
             this.nudQuietStart.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.nudQuietStart.Maximum = new decimal(new int[] {
@@ -290,7 +302,7 @@
             0,
             0});
             this.nudQuietStart.Name = "nudQuietStart";
-            this.nudQuietStart.Size = new System.Drawing.Size(63, 35);
+            this.nudQuietStart.Size = new System.Drawing.Size(63, 37);
             this.nudQuietStart.TabIndex = 1;
             this.nudQuietStart.Value = new decimal(new int[] {
             1,
@@ -301,10 +313,11 @@
             // chkQuietTime
             // 
             this.chkQuietTime.AutoSize = true;
+            this.chkQuietTime.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkQuietTime.Location = new System.Drawing.Point(14, 40);
             this.chkQuietTime.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.chkQuietTime.Name = "chkQuietTime";
-            this.chkQuietTime.Size = new System.Drawing.Size(424, 32);
+            this.chkQuietTime.Size = new System.Drawing.Size(431, 35);
             this.chkQuietTime.TabIndex = 0;
             this.chkQuietTime.Text = "Disable time announcements between";
             this.chkQuietTime.UseVisualStyleBackColor = true;
