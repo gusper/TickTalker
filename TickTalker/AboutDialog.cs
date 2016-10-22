@@ -18,12 +18,17 @@ namespace TickTalker
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Process.Start("http://gusperez.com/wp/software");
+            Process.Start("http://zinkolabs.com");
         }
 
         private void AboutDialog_Load(object sender, EventArgs e)
         {
             lblVersion.Text = "Version " + Globals.Version;
+        }
+
+        private void linkLabel2_LinkClicked(Object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process.Start("http://gusperez.com/wp/about");
         }
     }
 }
