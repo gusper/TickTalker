@@ -23,17 +23,20 @@ namespace TickTalker
     public static class Settings
     {
         private static SettingsData _data;
-        private static string _path = new System.IO.FileInfo(Application.ExecutablePath).DirectoryName;
+        private static string _path;
+        private const string filename = @"\settings.xml";
 
         static Settings()
         {
+            _path = Utils.GetAppDataPath();
+
             if (_data == null)
             {
-                if (File.Exists(_path + @"\ttsettings.xml"))
+                if (File.Exists(_path + filename))
                 {
-                    using (FileStream fs = new FileStream(_path + @"\ttsettings.xml", FileMode.Open))
+                    using (var fs = new FileStream(_path + filename, FileMode.Open))
                     {
-                        XmlSerializer xs = new XmlSerializer(typeof(SettingsData));
+                        var xs = new XmlSerializer(typeof(SettingsData));
                         _data = (SettingsData)xs.Deserialize(fs);
                     }
                 }
@@ -46,9 +49,9 @@ namespace TickTalker
 
         public static void Save()
         {
-            using (TextWriter tw = new StreamWriter(_path + @"\ttsettings.xml"))
+            using (TextWriter tw = new StreamWriter(_path + filename))
             {
-                XmlSerializer xs = new XmlSerializer(typeof(SettingsData));
+                var xs = new XmlSerializer(typeof(SettingsData));
                 xs.Serialize(tw, _data);
             }
         }
